@@ -1,0 +1,156 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 49px;
+}
+
+.header {
+  position: fixed;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 9 0 1px gray;
+  z-index: 2;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.header-nav-item {
+  margin-right: 10px;
+}
+
+.header-nav-item:last-child {
+  margin-right: 0;
+}
+
+.header-nav-item > * {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-nav-item::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.header-nav-item:hover::after {
+  width: 100%;
+}
+
+.main-content {
+  padding: 15px;
+}
+
+.main-content-banner {
+  position: relative;
+}
+
+.main-content-banner-text {
+  margin: 0;
+  color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+.main-blocks-primary,
+.main-blocks-secondary,
+.main-blocks-normal {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  border: 1px solid green;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-blocks {
+  z-index: 1;
+  position: relative;
+  height: 500px;
+}
+
+.main-blocks-primary {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.main-blocks-secondary {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 5;
+}
+
+.main-blocks-normal {
+  z-index: 7;
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  border-color: yellow;
+}
+
+.main-blocks-number {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.main-blocks-elevation {
+  transition: 0.3s;
+}
+
+.main-blocks-elevation:hover {
+  z-index: 8;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-blocks-elevation:hover .main-blocks-number {
+  color: blue;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.main-blocks-elevation:hover + div {
+  top: -100px;
+}
+
+.main-blocks-secondary {
+  border-color: red;
+}
+
+.main-content-banner-image {
+  width: 100%;
+  height: auto;
+}
