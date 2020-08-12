@@ -66,11 +66,20 @@ body {
 
 .main-content-banner-text {
   margin: 0;
-  color: white;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+  color: black;
+
   text-transform: uppercase;
+}
+
+.main-content-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
 }
 
 .main-blocks-primary,
