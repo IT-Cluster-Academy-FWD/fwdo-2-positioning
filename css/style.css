@@ -154,3 +154,11 @@ body {
   width: 100%;
   height: auto;
 }
+
+.main-content-floating-image {
+  max-width: 300px;
+  width: 100%;
+  float: right;
+  padding: 10px;
+  padding-left: 0;
+}
